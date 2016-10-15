@@ -1,0 +1,5 @@
+(1
+ (evil . [(20160827 1510) ((undo-tree (0 6 3)) (goto-chg (1 6))) "Extensible Vi layer for Emacs." tar])
+ (goto-chg . [(20131228 659) nil "goto last change" single])
+ (undo-tree . [(20161012 701) nil "Treat undo history as a tree" single])
+)
