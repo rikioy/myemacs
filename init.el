@@ -7,7 +7,6 @@
 
 (if (eq system-type 'windows-nt)
   (setq url-proxy-services '(("http" . "dev-proxy.oa.com:8080")))
-  (setq package-archives '(("myelpa" . "~/myelpa")))
 )
 
 ;; 模板设置
