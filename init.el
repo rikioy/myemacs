@@ -5,6 +5,11 @@
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
+(if (eq system-type 'windows-nt)
+  (setq url-proxy-services '(("http" . "dev-proxy.oa.com:8080")))
+  (setq package-archives '(("myelpa" . "~/myelpa")))
+)
+
 ;; 模板设置
 (load-theme 'wombat t)
 ;; 语法检查
@@ -16,9 +21,9 @@
 (require 'evil)
 (evil-mode 1)
 
-(add-to-list 'load-path "~/.emacs.d/myemacs/elpa-mirror")
+(add-to-list 'load-path "~/myemacs/elpa-mirror")
 (require 'elpa-mirror)
-(setq elpamr-default-output-directory "~/.emacs.d/myemacs/myelpa")
+(setq elpamr-default-output-directory "~/myemacs/myelpa")
 
 ;; php mode and php syntax check
 (require 'php-mode)
