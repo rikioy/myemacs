@@ -5,6 +5,10 @@
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
+(if (eq system-type 'windows-nt)
+  (setq url-proxy-services '(("http" . "dev-proxy.oa.com:8080")))
+)
+
 ;; 模板设置
 (load-theme 'wombat t)
 ;; 语法检查
