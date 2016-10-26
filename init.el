@@ -22,7 +22,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/myemacs/elpa-mirror")
 (require 'elpa-mirror)
-(setq elpamr-default-output-directory "~/.emacs.d/myemacs/myelpa")
+;; (setq elpamr-default-output-directory "~/.emacs.d/myemacs/myelpa")
 
 ;; php mode and php syntax check
 (require 'php-mode)
@@ -45,3 +45,11 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(require 'php-auto-yasnippets)
+(setq php-auto-yasnippet-php-program "/Users/fuqingrong/.emacs.d/elpa/php-auto-yasnippets-20141128.1411/Create-PHP-YASnippet.php")
+(define-key php-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
