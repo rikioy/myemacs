@@ -48,6 +48,9 @@
 
 ;; yasnippet
 (require 'yasnippet)
+(setq yas-snippet-dirs
+  '("~/.emacs.d/myemacs/mysnippets"                 ;; personal snippets
+    ))
 (yas-global-mode 1)
 
 (require 'php-auto-yasnippets)
