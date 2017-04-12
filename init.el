@@ -1,5 +1,4 @@
 (require 'package)
-(setq package-user-dir "~/.emacs.d/myemacs/elpa")
 (add-to-list 'package-archives
               '("melpa" . "http://melpa.org/packages/") t)
 (when (< emacs-major-version 24)
@@ -9,6 +8,8 @@
 (if (eq system-type 'windows-nt)
   (setq url-proxy-services '(("http" . "dev-proxy.oa.com:8080")))
 )
+
+(setq package-user-dir "~/.emacs.d/myemacs/elpa")
 
 ;; 模板设置
 (load-theme 'wombat t)
