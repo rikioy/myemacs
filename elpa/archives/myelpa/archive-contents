@@ -1,0 +1,12 @@
+(1
+ (auto-complete . [(20160827 649) ((popup (0 5 0)) (cl-lib (0 5))) "Auto Completion for GNU Emacs" tar])
+ (dash . [(20160820 501) nil "A modern list library for Emacs" tar])
+ (evil . [(20160827 1510) ((undo-tree (0 6 3)) (goto-chg (1 6))) "Extensible Vi layer for Emacs." tar])
+ (flymake-easy . [(20140818 55) nil "Helpers for easily building flymake checkers" single])
+ (flymake-php . [(20121104 1102) ((flymake-easy (0 1))) "A flymake handler for php-mode files" single])
+ (goto-chg . [(20131228 659) nil "goto last change" single])
+ (php-mode . [(20160910 1801) ((emacs (24)) (cl-lib (0 5))) "Major mode for editing PHP code" tar])
+ (popup . [(20160709 729) ((cl-lib (0 5))) "Visual Popup User Interface" single])
+ (s . [(20160928 636) nil "The long lost Emacs string manipulation library." tar])
+ (undo-tree . [(20161012 701) nil "Treat undo history as a tree" single])
+)

@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("flymake-easy.el") (22765 64010 952000
+;;;### (autoloads nil nil ("flymake-easy.el") (22537 37364 372000
 ;;;;;;  0))
 
 ;;;***

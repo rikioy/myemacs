@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "flymake-php" "flymake-php.el" (22765 64011
+;;;### (autoloads nil "flymake-php" "flymake-php.el" (22537 37364
 ;;;;;;  0 0))
 ;;; Generated autoloads from flymake-php.el
 
