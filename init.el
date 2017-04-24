@@ -2,8 +2,6 @@
     'load-path 
     (expand-file-name "myemacs/lisp" user-emacs-directory))
 
-(setq package-user-dir "~/.emacs.d/myemacs/elpa")
-
 (require 'init-elpa)            ;; elpa
 (require 'init-proxy)           ;; proxy
 (require 'init-base)            ;; 一些基本的设置
