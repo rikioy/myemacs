@@ -8,6 +8,6 @@
 (require 'init-evil)            ;; evil
 (require 'init-orgmode)         ;; orgmode
 (require 'init-key)             ;; key
-;;(require 'init-phpmode)       ;;
+(require 'init-phpmode)       ;;
 (require 'init-ace-jump-mode)   ;;
 (require 'init-yasnippet)       ;;

@@ -294,7 +294,9 @@ You can replace \"en\" with your ISO language code."
   :type 'string)
 
 ;;;###autoload
-(add-to-list 'interpreter-mode-alist (cons "php" 'php-mode))
+(add-to-list 'interpreter-mode-alist
+             ;; Match php, php-3, php5, php7, php5.5, php-7.0.1, etc.
+             (cons "php\\(?:-?[3457]\\(?:\\.[0-9]+\\)*\\)?" 'php-mode))
 
 (defcustom php-mode-hook nil
   "List of functions to be executed on entry to `php-mode'."
@@ -1584,7 +1586,8 @@ a completion list."
       1 font-lock-type-face)
 
      ;; Highlight return types in functions and methods.
-     ("function.+:\\s-?\\??\\(\\(?:\\sw\\|\\s_\\)+\\)" 1 font-lock-type-face)
+     ("function.+:\\s-*\\??\\(\\(?:\\sw\\|\\s_\\)+\\)" 1 font-lock-type-face)
+     (")\\s-*:\\s-*\\??\\(\\(?:\\sw\\|\\s_\\)+\\)\\s-*\{" 1 font-lock-type-face)
 
      ;; Highlight class names used as nullable type hints
      ("\\?\\(\\(:?\\sw\\|\\s_\\)+\\)\\s-+\\$" 1 font-lock-type-face)
